@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ljson-parsing</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_vista_individual">vista_individual</string>
+    <string name="id">ID</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidop">Apellido Paterno</string>
+    <string name="apellidom">Apellido Materno</string>
+    <string name="email">Email</string>
+    <string name="telefono">Telefono</string>
+    <string name="edad">Edad</string>
+    <string name="title_activity_vista_contacto">vista_contacto</string>
+</resources>
