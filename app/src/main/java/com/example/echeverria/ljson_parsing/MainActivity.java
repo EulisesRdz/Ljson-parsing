@@ -22,7 +22,7 @@ public class MainActivity extends ListActivity {
 
     private ProgressDialog pDialog;
     // URL to get contacts JSON
-    private static String url = "http://eulisesrdz.net84.net/App/aabbcc.json";
+    private static String url = "http://eulisesrdz.260mb.net/android/aabbcc.json";
 
     // JSON Node names
     private final String KEY_CONTACTO = "contacts";
