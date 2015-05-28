@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class vista_contacto extends Activity {
 
+    //Declaracion de los Nodos de JSON.
     private final String KEY_ID_A = "id_A";
     private final String KEY_NOMBRE = "nombre";
     private final String KEY_APELLIDOP = "apellido_p";
@@ -22,7 +23,7 @@ public class vista_contacto extends Activity {
         setContentView(R.layout.vista_contacto);
 
         Intent in = getIntent();
-        // Get JSON values from previous intent
+        //Se obtienen los valores de la actividad (intent) anterior.
         String id = in.getStringExtra(KEY_ID_A);
         String nombre = in.getStringExtra(KEY_NOMBRE);
         String apep = in.getStringExtra(KEY_APELLIDOP);
@@ -31,7 +32,7 @@ public class vista_contacto extends Activity {
         String tel = in.getStringExtra(KEY_TELEFONO);
         String edad = in.getStringExtra(KEY_EDAD);
 
-        // Displaying all values on the screen
+        //Se muestran los valores en la pantalla.
         TextView lblid = (TextView) findViewById(R.id.id);
         TextView lblnombre = (TextView) findViewById(R.id.nombre);
         TextView lblapep = (TextView) findViewById(R.id.apllidop);
@@ -40,6 +41,7 @@ public class vista_contacto extends Activity {
         TextView lbltel = (TextView) findViewById(R.id.tel);
         TextView lbledad = (TextView) findViewById(R.id.edad);
 
+        //Se concatenan los textos + los resultados obtenidos anteriormente.
         lblid.setText(Html.fromHtml("<b>Id:</b> " + id));
         lblnombre.setText(Html.fromHtml("<b>Nombre:</b> " + nombre));
         lblapep.setText(Html.fromHtml("<b>A Paterno:</b> " + apep));
